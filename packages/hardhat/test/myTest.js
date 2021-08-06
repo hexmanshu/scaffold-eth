@@ -7,20 +7,20 @@ use(solidity);
 describe("My Dapp", function () {
   let myContract;
 
-  describe("YourContract", function () {
-    it("Should deploy YourContract", async function () {
-      const YourContract = await ethers.getContractFactory("YourContract");
+  describe("Staker", function () {
+    it("Should deploy Staker", async function () {
+      const Staker = await ethers.getContractFactory("Staker");
 
-      myContract = await YourContract.deploy();
+      myContract = await Staker.deploy();
     });
 
-    describe("setPurpose()", function () {
+    /* describe("setPurpose()", function () {
       it("Should be able to set a new purpose", async function () {
         const newPurpose = "Test Purpose";
 
         await myContract.setPurpose(newPurpose);
         expect(await myContract.purpose()).to.equal(newPurpose);
-      });
-    });
+      }); 
+    });*/
   });
 });
